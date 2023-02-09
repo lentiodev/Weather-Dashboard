@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <!--Font Awesome -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <!-- Link to css  -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+
+  <title>Weather Dashboard</title>
+  
+</head>
+
+<body>
+  <header class="container-fluid text-center text-white bg-dark p-2 weather-header">
+    <h1>Weather Dashboard</h1>
+  </header>
+
+  <div class="container-fluid mainCon">
+    <div class="row">
+      <div class="col-12 col-md-3 col-xl-3 colOne">
+        <label>Search for a City:</label>
+
+        <div class="input-group mb-3">
+          <input type="text" class="form-control textVal" placeholder="London">
+          <div class="input-group-append btnPar">
+            <button class="btn btn-primary search" type="button" id="button-addon2"><i class="fa-sharp fa-regular fa-user"></i></button>
+          </div>
+        </div>
+
+        <div class="container cityHist"></div>
+
+      </div>
+      <div class="col-12 col-md-9 col-xl-9 colTwo">
+
+        <div class="row today">
+
+          <div class="card bg-light mb-3 " style="max-width: 400px;">
+            <h2 class="card-header cardTodayCityName"></h2>
+            <h3 class="card-header cardTodayDate"></h3>
+            <img class="icons"/>
+            <div class="card-body cardBodyToday">
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row fiveForecast"></div>
+
+      </div>
+
+  <!-- Moment.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!--Link to Javascript-->
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
